@@ -1,12 +1,12 @@
 {
   "name": "generator-vue3-vite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "homepage": "",
   "author": {
     "name": "shichang.qiu",
     "email": "shichang.qiu@hotmail.com",
-    "url": ""
+    "url": "https://github.com/ModeYapu/generator-vue3-vite"
   },
   "files": [
     "generators"
