@@ -107,7 +107,7 @@ module.exports = class extends Generator {
       "tsconfig.json",
       ".npmignore",
       "index.html",
-      "vite.config.js"
+      "vite.config.ts"
     ]);
   }
 
