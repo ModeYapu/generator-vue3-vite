@@ -1,7 +1,5 @@
-// import { createRouter, createWebHashHistory } from "vue-router";
-import { createRouter, createWebHashHistory } from "./grouter";
+import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "@/views/home.vue";
-import Consult from '@/views/consult.vue'
 import PageLoad from "./PageLoad.vue";
 const routes = [
   {
@@ -27,14 +25,6 @@ const routes = [
   {
     path: "/:page",
     component: PageLoad,
-  },
-  {
-    path: "/consult",
-    component: Consult,
-  },
-  {
-    path: "/home",
-    component: Home,
   },
   {
     path: "/",

@@ -26,6 +26,13 @@ export default ({ mode }) => {
       vue(),
       styleImport({
         resolves: [VantResolve()],
+        libs: [
+          {
+            libraryName: "vant",
+            esModule: true,
+            resolveStyle: (name) => `../es/${name}/style`,
+          },
+        ],
       }),
     ],
     css: {

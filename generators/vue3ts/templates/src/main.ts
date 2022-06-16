@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-import Router from "./router/index";
+import Router from "./router";
 
 import "amfe-flexible";
 import {
