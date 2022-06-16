@@ -1,10 +1,6 @@
 <template>
-    <div>Home</div>
-    <router-link to='/about'>Home</router-link>
+  <div>Home</div>
+  <router-link to="/about">Home</router-link>
 </template>
 
-<script>
-    export default {
-        name: 'Home'
-    }
-</script>
+<script setup></script>

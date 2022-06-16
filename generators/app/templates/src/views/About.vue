@@ -1,25 +1,18 @@
 <!--  -->
 <template>
-    <div>About</div>
-    <button @click="linkTo">Home</button>
+  <div>About</div>
+  <button @click="linkTo">Home</button>
+  <HelloWorldVue />
 </template>
 
-<script>
-    import {
-        useRouter
-    } from "vue-router"
-    export default {
-        name: 'About',
-        setup() {
-            const router = useRouter()
-            const linkTo = () => {
-                router.push({
-                    path: '/home'
-                })
-            }
-            return {
-                linkTo
-            }
-        }
-    }
+<script setup>
+import HelloWorldVue from "@/components/HelloWorld.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+const linkTo = () => {
+  router.push({
+    path: "/home"
+  });
+};
 </script>
