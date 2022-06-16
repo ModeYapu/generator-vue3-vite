@@ -1,0 +1,32 @@
+{
+  "name": "<%= fullName %>",
+  "description": "<%= description %>",
+  "version": "1.0.0",
+  "author": {
+    "name": "<%= author %>",
+    "email": "<%= email %>"
+  },
+  "license": "<%= license %>",
+  "scripts": {
+    "serve": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:env": "vue-tsc --noEmit && vite build --mode development",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.25.0",
+    "vant": "3",
+    "vue": "^3.2.25",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "less": "^4.1.2",
+    "postcss-pxtorem": "^6.0.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vite-plugin-style-import": "^1.4.1",
+    "vue-tsc": "^0.29.8"
+  }
+}
