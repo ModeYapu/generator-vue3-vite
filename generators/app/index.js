@@ -102,7 +102,7 @@ module.exports = class extends Generator {
       ".vscode",
       "public",
       "src",
-      ".gitignore",
+      ".npmignore",
       "index.html",
       "vite.config.js"
     ]);
