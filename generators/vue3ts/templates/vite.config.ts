@@ -10,16 +10,16 @@ export default ({ mode }) => {
   return defineConfig({
     base: "./",
     build: {
-      outDir: "D:\\backEnd\\ysz-brand-official-h5",
+      outDir: "./dist"
     },
     // 配置文件别名 vite1.0是/@/  2.0改为/@
 
     // 这里是将src目录配置别名为 /@ 方便在项目中导入src目录下的文件
     resolve: {
       alias: {
-        "@": resolve(__dirname, "src"),
+        "@": resolve(__dirname, "src")
       },
-      extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json"],
+      extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json"]
     },
     define: { "process.env": {} },
     plugins: [
@@ -30,10 +30,10 @@ export default ({ mode }) => {
           {
             libraryName: "vant",
             esModule: true,
-            resolveStyle: (name) => `../es/${name}/style`,
-          },
-        ],
-      }),
+            resolveStyle: name => `../es/${name}/style`
+          }
+        ]
+      })
     ],
     css: {
       postcss: {
@@ -42,21 +42,21 @@ export default ({ mode }) => {
             rootValue({ file }) {
               return file.indexOf("vant") !== -1 ? 37.5 : 75;
             },
-            propList: ["*"],
-          }),
-        ],
-      },
+            propList: ["*"]
+          })
+        ]
+      }
     },
     server: {
-      host: "loaclhost",
+      host: "127.0.0.1",
       port: 3000,
       proxy: {
         "/api": {
           target: loadEnv(mode, process.cwd()).VITE_RES_URL,
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ""),
-        },
-      },
-    },
+          rewrite: path => path.replace(/^\/api/, "")
+        }
+      }
+    }
   });
 };

@@ -19,27 +19,24 @@
             alt=""
           />
         </div>
-        <div class="logo justify-center">
-          <img src="@/assets/img/ysz_logo.png" alt="" />
-        </div>
         <div class="content">
           <div
             class="link justify-center"
-            @click="goPath('https://docs.qq.com/doc/DSG9CRk1EUHFOVUZI')"
+            @click="goPath('https://baidu.com')"
           >
             <img src="@/assets/img/img_gxrz.png" alt="" />
             <span class="text">更新日志</span>
           </div>
           <div
             class="link justify-center"
-            @click="goPath('https://docs.qq.com/doc/DSE9wQVpaQWR4UHBk')"
+            @click="goPath('https://baidu.com')"
           >
             <img src="@/assets/img/img_fwxy.png" alt="" />
             <span class="text">服务协议</span>
           </div>
           <div
             class="link justify-center"
-            @click="goPath('https://docs.qq.com/doc/DSFNSSlVoamN2Z3F0')"
+            @click="goPath('https://baidu.com')"
           >
             <img src="@/assets/img/img_yszc.png" alt="" />
             <span class="text">隐私政策</span>
