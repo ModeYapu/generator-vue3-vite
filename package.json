@@ -1,6 +1,6 @@
 {
   "name": "generator-vue3-vite",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "homepage": "",
   "author": {
@@ -9,7 +9,8 @@
     "url": "https://github.com/ModeYapu/generator-vue3-vite"
   },
   "files": [
-    "generators"
+    "generators",
+    ".gitignore"
   ],
   "main": "generators/index.js",
   "keywords": [
