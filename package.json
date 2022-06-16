@@ -1,6 +1,6 @@
 {
   "name": "generator-vue3-vite",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "homepage": "",
   "author": {
@@ -27,13 +27,14 @@
     "lint-staged": "^11.2.6",
     "prettier": "^1.19.1",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.7.0"
+    "yeoman-test": "^6.3.0"
   },
   "engines": {
     "npm": ">= 4.0.0"
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "mkdirp": "^1.0.4",
     "yeoman-generator": "^5.4.2",
     "yosay": "^2.0.2"
   },
