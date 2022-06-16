@@ -15,6 +15,7 @@ Then generate your new project:
 
 ```bash
 yo vue3-vite
+yo vue3-vite:vue3ts
 ```
 
 ## Getting To Know Yeoman
