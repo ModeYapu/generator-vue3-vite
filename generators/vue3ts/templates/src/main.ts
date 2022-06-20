@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 
 import Router from "./router";
+import { createPinia } from "pinia";
 
 import "amfe-flexible";
 import {
@@ -19,11 +20,9 @@ import {
   ConfigProvider,
 } from "vant";
 
-import store from "./store/index";
-
 const app = createApp(App);
 app.use(Router);
-app.use(store);
+app.use(createPinia());
 app.use(Button);
 app.use(Tab);
 app.use(Tabs);

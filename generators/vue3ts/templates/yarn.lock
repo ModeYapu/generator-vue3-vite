@@ -183,10 +183,10 @@
     "@vue/compiler-dom" "3.2.27"
     "@vue/shared" "3.2.27"
 
-"@vue/devtools-api@^6.0.0-beta.18":
-  "integrity" "sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw=="
-  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz"
-  "version" "6.0.0-beta.21.1"
+"@vue/devtools-api@^6.0.0-beta.18", "@vue/devtools-api@^6.1.4":
+  "integrity" "sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ=="
+  "resolved" "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.1.4.tgz"
+  "version" "6.1.4"
 
 "@vue/reactivity-transform@3.2.27":
   "integrity" "sha512-67//61ObGxGnVrPhjygocb24eYUh+TFMhkm7szm8v5XdKXjkNl7qgIOflwGvUnwuIRJmr9nZ7+PvY0fL+H2upA=="
@@ -753,6 +753,14 @@
   "resolved" "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
   "version" "4.0.1"
 
+"pinia@^2.0.14":
+  "integrity" "sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA=="
+  "resolved" "https://registry.npmjs.org/pinia/-/pinia-2.0.14.tgz"
+  "version" "2.0.14"
+  dependencies:
+    "@vue/devtools-api" "^6.1.4"
+    "vue-demi" "*"
+
 "postcss-pxtorem@^6.0.0":
   "integrity" "sha512-ZRXrD7MLLjLk2RNGV6UA4f5Y7gy+a/j1EqjAfp9NdcNYVjUMvg5HTYduTjSkKBkRkfqbg/iKrjMO70V4g1LZeg=="
   "resolved" "https://registry.npmjs.org/postcss-pxtorem/-/postcss-pxtorem-6.0.0.tgz"
@@ -977,7 +985,7 @@
   "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   "version" "2.3.1"
 
-"typescript@*", "typescript@^4.4.4":
+"typescript@*", "typescript@^4.4.4", "typescript@>=4.4.4":
   "integrity" "sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg=="
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.5.4.tgz"
   "version" "4.5.4"
@@ -1173,6 +1181,11 @@
     "vscode-pug-languageservice" "0.29.8"
     "vscode-typescript-languageservice" "0.29.8"
 
+"vue-demi@*":
+  "integrity" "sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg=="
+  "resolved" "https://registry.npmjs.org/vue-demi/-/vue-demi-0.13.1.tgz"
+  "version" "0.13.1"
+
 "vue-router@4":
   "integrity" "sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.12.tgz"
@@ -1188,7 +1201,7 @@
     "@volar/shared" "0.29.8"
     "vscode-vue-languageservice" "0.29.8"
 
-"vue@^3.0.0", "vue@^3.2.25", "vue@3.2.27":
+"vue@^2.6.14 || ^3.2.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.25", "vue@3.2.27":
   "integrity" "sha512-p1cH8Q6eaPwvANCjFQj497a914cxXKKwOG3Lg9USddTOrn4/zFMKjn9dnovkx+L8VtFaNgbVqW8mLJS/eTA6xw=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.27.tgz"
   "version" "3.2.27"

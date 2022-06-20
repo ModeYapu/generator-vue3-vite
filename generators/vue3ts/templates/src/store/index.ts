@@ -1,28 +1,25 @@
-import { createStore } from "./gvuex";
+import { defineStore } from "pinia";
 
-const store = createStore({
-  state() {
+export interface ICountStore {
+  count: number;
+}
+
+const store = defineStore("id", {
+  state: (): ICountStore => {
     return {
-      count: 1,
+      count: 1
     };
   },
   getters: {
-    double(state: any) {
+    double(state: any): number {
       return state.count * 2;
-    },
-  },
-  mutations: {
-    add(state: any) {
-      state.count++;
-    },
+    }
   },
   actions: {
-    asyncAdd({ commit }: any) {
-      setTimeout(() => {
-        commit("add");
-      }, 1000);
-    },
-  },
+    Add({ state }: any) {
+      state.count++;
+    }
+  }
 });
 
 export default store;
