@@ -1,6 +1,6 @@
-# generator-project [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-vue3-vite [![NPM version][npm-image]][npm-url]
 
->
+<!-- [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] -->
 
 ## Installation
 
@@ -17,7 +17,6 @@ Then generate your new project:
 yo vue3-vite
 
 Typescript support
-
 yo vue3-vite:vue3ts  
 ```
 
