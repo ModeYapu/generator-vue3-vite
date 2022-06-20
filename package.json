@@ -15,7 +15,9 @@
   "main": "generators/index.js",
   "keywords": [
     "vue3",
-    "yeoman-generator"
+    "yeoman-generator",
+    "vite",
+    "typescript"
   ],
   "devDependencies": {
     "coveralls": "^3.0.7",
