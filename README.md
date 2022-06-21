@@ -1,4 +1,5 @@
-# generator-vue3-vite [![NPM version][npm-image]][npm-url]
+# generator-vue3-vite
+ <!-- [![NPM version][npm-image]][npm-url] -->
 
 <!-- [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url] -->
 
@@ -9,6 +10,8 @@ First, install [Yeoman](http://yeoman.io) and generator-project using [npm](http
 ```bash
 npm install -g yo
 npm install -g generator-vue3-vite
+or 
+npm upgrade -g generator-vue3-vite
 ```
 
 Then generate your new project:

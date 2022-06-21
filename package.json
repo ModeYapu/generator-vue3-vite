@@ -80,5 +80,5 @@
     "test": "jest"
   },
   "repository": "ModeYapu/generator-vue3-vite",
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
