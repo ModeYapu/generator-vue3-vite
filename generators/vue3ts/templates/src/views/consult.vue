@@ -5,32 +5,23 @@
 <script setup lang="ts">
 import headerMenu from "@/components/menu.vue";
 
-import { onMounted, onUnmounted, reactive, ref } from "vue";
+import { onMounted } from "vue";
 import router from "../router";
 import axios from "../utils/request";
-import { Dialog as VantDialog } from "vant";
 
 onMounted(() => {
   getProvinceList();
 });
 
 const getProvinceList = async () => {
-  const res = await axios.post("/region/provinceList");
-  console.log(res);
-};
-const getCityList = async (id: number) => {
-  const res = await axios.post("/region/cityList", { provinceId: id });
-  return res.data;
+  // 取消请求 例子
+  const controller = new AbortController();
+  const res = await axios.get("/region/provinceList", {
+    signal: controller.signal
+  });
+  controller.abort();
 };
 
-const overlayShow = ref(false);
-const onSubmit = async () => {
-  try {
-    await axios.post("/appointment/generate", {});
-  } catch (error) {
-    return;
-  }
-};
 const goBlack = () => {
   router.push("/");
 };
