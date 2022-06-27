@@ -46,7 +46,6 @@ const loadPage = async () => {
 };
 
 const getPath = () => {
-  debugger
   const params = route.params;
   const paths = [];
   for (let k in params) {

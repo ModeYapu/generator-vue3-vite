@@ -34,8 +34,7 @@ yo vue3-vite:vue3ts
 
 Apache-2.0 © [shichang.qiu]()
 
-[npm-image]: https://badge.fury.io/js/generator-project.svg
-[npm-url]: https://npmjs.org/package/generator-project
+[npm-url]: https://www.npmjs.com/package/generator-vue3-vite
 [travis-image]: https://travis-ci.com/ModeYapu/generator-project.svg?branch=master
 [travis-url]: https://travis-ci.com/ModeYapu/generator-project
 [daviddm-image]: https://david-dm.org/ModeYapu/generator-project.svg?theme=shields.io
