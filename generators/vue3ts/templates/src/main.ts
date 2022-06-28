@@ -18,6 +18,7 @@ import {
   Cascader,
   Overlay,
   ConfigProvider,
+  Tabbar, TabbarItem
 } from "vant";
 
 const app = createApp(App);
@@ -35,4 +36,6 @@ app.use(Popup);
 app.use(Cascader);
 app.use(Overlay);
 app.use(ConfigProvider);
+app.use(Tabbar);
+app.use(TabbarItem);
 app.mount("#app");
