@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import footerVue from './components/footer.vue';
-const showFooter = ref(false)
+import useShowFooter from './store/footer'
+const { getShowFooter, $state } = useShowFooter()
 
 </script>
 
 <template>
   <router-view></router-view>
   <div id="teleport-target"></div>
-  <footerVue v-if='showFooter' />
+  <footerVue v-if='getShowFooter' />
 </template>
 
 <style src="./assets/common.css">
