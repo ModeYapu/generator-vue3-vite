@@ -28,13 +28,6 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
   (response: AxiosResponse) => {
     const res = response.data;
-
-    // if (!res.status) {
-    //   message.error(res.message || "Error");
-    //   return Promise.reject(new Error(res.message || "Error"));
-    // } else {
-    //   return res.data;
-    // }
     return res;
   },
   (err: AxiosError) => {
