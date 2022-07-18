@@ -9,6 +9,12 @@ import { onMounted } from "vue";
 import router from "../router";
 import axios from "../utils/request";
 
+import useShowFooter from '../store/footer'
+
+const { setShowFooter } = useShowFooter()
+setShowFooter(true)
+
+
 onMounted(() => {
   getProvinceList();
 });

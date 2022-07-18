@@ -3,7 +3,7 @@ import { ref } from "vue";
 import footerVue from './components/footer.vue';
 import useShowFooter from './store/footer'
 const { getShowFooter, $state } = useShowFooter()
-
+console.log('getShowFooter',getShowFooter)
 </script>
 
 <template>

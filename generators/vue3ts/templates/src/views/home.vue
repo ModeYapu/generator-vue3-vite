@@ -6,7 +6,7 @@
 <script setup lang="ts">
 import headerMenu from "@/components/menu.vue";
 import ConsultingService from "@/components/consulting-service.vue";
-import useShowFooter from '@/store/footer'
+import useShowFooter from '../store/footer'
 
 const { setShowFooter } = useShowFooter()
 setShowFooter(true)
