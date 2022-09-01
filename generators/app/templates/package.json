@@ -13,13 +13,13 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "esbuild-windows-64": "^0.14.44",
-    "pinia": "^2.0.14",
-    "vue": "^3.2.37",
-    "vue-router": "^4.0.16"
+    "esbuild-windows-64": "^0.15.6",
+    "pinia": "^2.0.21",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
-    "vite": "^2.9.12"
+    "@vitejs/plugin-vue": "^3.0.3",
+    "vite": "^3.0.9"
   }
 }

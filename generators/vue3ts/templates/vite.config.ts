@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import styleImport, { VantResolve } from "vite-plugin-style-import";
+import  {createStyleImportPlugin, VantResolve } from "vite-plugin-style-import";
 import { resolve } from "path";
 import postCssPxToRem from "postcss-pxtorem";
 import { loadEnv } from "vite";
@@ -24,7 +24,7 @@ export default ({ mode }) => {
     define: { "process.env": {} },
     plugins: [
       vue(),
-      styleImport({
+      createStyleImportPlugin({
         resolves: [VantResolve()],
         libs: [
           {
