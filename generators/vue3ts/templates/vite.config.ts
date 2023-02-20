@@ -10,7 +10,15 @@ export default ({ mode }) => {
   return defineConfig({
     base: "./",
     build: {
-      outDir: "./dist"
+      outDir: "./dist",
+      minify: 'terser',
+      terserOptions: {
+        // 生产环境是移除console debugger
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        }
+      }
     },
     // 配置文件别名 vite1.0是/@/  2.0改为/@
 
